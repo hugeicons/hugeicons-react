@@ -1,6 +1,6 @@
 {
   "name": "hugeicons-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -8,9 +8,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "prepublishOnly": "npm run build",
-    "postpublish": "npm run clean",
-    "clean": "rimraf dist"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
