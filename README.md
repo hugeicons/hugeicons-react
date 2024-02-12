@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# HugeIcons-React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to HugeIcons-React, an expertly crafted top-notch icon library designed to make your applications look vibrant and dynamic. 
 
-## Available Scripts
+With more than 3600 stroke icons available for free, our collection offers a wide range of easily customizable and scalable icons, perfect for enhancing user interfaces. 
 
-In the project directory, you can run:
+Thousands of designers, developers, and content creators use HugeIcons Pro for unlimited personal and commercial projects, making it one of the most versatile and user-friendly icon libraries available.
 
-### `npm start`
+## General Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Icons can be downloaded from the [HugeIcons website](https://hugeicons.com) and used in your projects. The icons are available in SVG format and can be easily integrated into your applications.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Extensive Collection**: Access over 3600 stroke icons for free, ready to use in your projects.
+- **Scalable Icons**: Easily adjust the size of icons to fit your design perfectly.
+- **Color Customization**: Apply any color to icons to match your brand or design theme.
+- **Rotation and Animation**: Add a dynamic touch with rotation and animation options.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To start using HugeIcons-React in your project, install the package via npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install hugeicons-react
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Or via yarn:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+yarn add hugeicons-react
+```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Import the icons you need from the library and integrate them into your React components. Here's how you can customize the icons to fit your needs:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Control Icon Size
+Adjust the size of your icons by passing a `size` prop:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```jsx
+import { Home01Icon } from "hugeicons-react";
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<Home01Icon size={32} /> // Custom size
+```
 
-## Learn More
+### Customize Icon Color
+Change the color of your icons by passing a `color` prop:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```jsx
+import { MarketingIcon } from "hugeicons-react";
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<MarketingIcon color="#00FF00" /> // Green color
+```
+
+### Rotate Icons
+Rotate your icons to a specific angle with the `rotate` prop:
+
+```jsx
+import { ListSettingIcon } from "hugeicons-react";
+
+<ListSettingIcon rotate={90} /> // Rotate 90 degrees
+```
+
+### Animate Icons
+Apply a simple animation to your icons by setting the animate prop to true:
+
+```jsx
+import { MarketingIcon } from "hugeicons-react";
+    
+<MarketingIcon animate={true} /> // Enable animation
+```
+
+## Example
+
+Check out our example project to see HugeIcons-React in action and explore more customization options.
+
+## Contributing
+
+Contributions are welcome! If you'd like to add more icons or improve the library, please feel free to submit a pull request or open an issue.
+
+## License
+
+HugeIcons-React is licensed under the MIT License. See the LICENSE file for more details.
