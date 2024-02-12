@@ -81,4 +81,4 @@ Contributions are welcome! If you'd like to add more icons or improve the librar
 
 ## License
 
-HugeIcons-React is licensed under the MIT License. See the LICENSE file for more details.
+HugeIcons-React is licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
