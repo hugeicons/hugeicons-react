@@ -1,11 +1,21 @@
 {
   "name": "hugeicons-react",
   "version": "0.1.2",
+  "description": "HugeIcons React Component Library https://hugeicons.com",
+  "homepage": "https://hugeicons.com",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:hugeicons/hugeicons-react.git"
+  },
+  "author": "HugeIcons",
+  "bugs": {
+    "url": "https://github.com/hugeicons/hugeicons-react/issues"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "prepublishOnly": "npm run build"
