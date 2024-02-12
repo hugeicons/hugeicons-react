@@ -1,6 +1,6 @@
 {
   "name": "hugeicons-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -9,11 +9,25 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "prepublishOnly": "npm run build",
-    "postpublish": "npm run clean"
+    "postpublish": "npm run clean",
+    "clean": "rimraf dist"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.80",
     "typescript": "^4.9.5"
-  }
+  },
+  "keywords": [
+    "icons",
+    "react-icons",
+    "ui-components",
+    "design-system",
+    "vector-icons",
+    "react-component-library",
+    "web-icons",
+    "scalable-icons",
+    "customizable-icons",
+    "icon-library"
+  ],
+  "license": "CC0-1.0"
 }

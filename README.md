@@ -1,6 +1,6 @@
-# HugeIcons-React
+# Hugeicons React
 
-Welcome to HugeIcons-React, an expertly crafted top-notch icon library designed to make your applications look vibrant and dynamic. 
+Welcome to Hugeicons React, an expertly crafted top-notch icon library designed to make your applications look vibrant and dynamic. 
 
 With more than 3600 stroke icons available for free, our collection offers a wide range of easily customizable and scalable icons, perfect for enhancing user interfaces. 
 
@@ -81,4 +81,4 @@ Contributions are welcome! If you'd like to add more icons or improve the librar
 
 ## License
 
-HugeIcons-React is licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+Hugeicons React is licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
