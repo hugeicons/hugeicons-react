@@ -1,0 +1,27 @@
+# Source files
+/src
+
+# Example project
+/example
+
+# Development configs
+/.gitignore
+/.npmignore
+/tsconfig.json
+/eslintConfig
+
+# Node modules
+/node_modules
+
+# Build artifacts
+/coverage
+/.cache
+/dist/*.map
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# Miscellaneous
+.DS_Store
+/__tests__/
