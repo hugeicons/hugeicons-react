@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {AddSquareIcon} from "hugeicons-react";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AddSquareIcon />
+    <App />
   </React.StrictMode>
 );

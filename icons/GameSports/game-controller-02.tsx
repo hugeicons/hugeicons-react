@@ -1,0 +1,50 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+
+interface GameController02IconProps extends SVGProps<SVGSVGElement> {
+  size?: number;
+  rotate?: number;
+  animate?: boolean;
+}
+
+const GameController02Icon = (props: GameController02IconProps) => {
+  const animationName = props.animate ? 'spinAnimation' : '';
+
+  return (
+    <>
+      <style>
+        {`
+          @keyframes ${animationName} {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        `}
+      </style>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlSpace="preserve"
+        viewBox="0 0 24 24"
+        width={props.size || 24}
+        height={props.size || 24}
+        fill={"none"}
+        {...props}
+        style={{
+          ...props.style,
+          animation: props.animate ? `${animationName} 2s linear infinite` : undefined,
+          transform: `rotate(${props.rotate || 0}deg)`,
+        }}
+      >
+        <path d="M17.5 16C17.5 17.1046 16.6046 18 15.5 18C14.3954 18 13.5 17.1046 13.5 16C13.5 14.8954 14.3954 14 15.5 14C16.6046 14 17.5 14.8954 17.5 16Z" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M10.5 16C10.5 17.1046 9.60457 18 8.5 18C7.39543 18 6.5 17.1046 6.5 16C6.5 14.8954 7.39543 14 8.5 14C9.60457 14 10.5 14.8954 10.5 16Z" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M8.16417 17.8583C6.891 20.067 5.20631 21.347 3.84736 20.9174C1.98573 20.3289 1.44035 16.7547 2.62922 12.9344C3.8181 9.11398 6.29102 6.49405 8.15264 7.08259C9.30278 7.44619 9.35625 8.86174 10.3032 9.378C10.527 9.5 10.8405 9.5 11.4676 9.5H12.5324C13.1595 9.5 13.473 9.5 13.6968 9.378C14.6438 8.86174 14.6972 7.44619 15.8474 7.08259C17.709 6.49405 20.1819 9.11398 21.3708 12.9344C22.5597 16.7547 22.0143 20.3289 20.1526 20.9174C18.7937 21.347 17.109 20.067 15.8358 17.8583M11.1039 16H12.8961" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M12 3V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </>
+  );
+};
+
+export default GameController02Icon;
