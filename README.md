@@ -1,8 +1,14 @@
+![image](https://github.com/hugeicons/hugeicons-react/assets/130147052/2fa58062-4e94-4473-949e-e4f388b27710)
+
+
 # HugeIcons React - Free React Icons
 
 Welcome to HugeIcons React, your ultimate source for free React icons. With over 3600 stroke icons available at no cost, our collection is designed to cater to a wide range of design needs, making it perfect for developers and designers looking for high-quality, customizable React icons. Enhance your user interfaces with our scalable and easily adjustable icons, ideal for projects of any size.
 
 Thousands of designers, developers, and content creators use HugeIcons Pro for unlimited personal and commercial projects, making it one of the most versatile and user-friendly icon libraries available.
+
+![image](https://github.com/hugeicons/hugeicons-react/assets/130147052/fbbdccfc-074a-45de-8aaf-218db2fcda28)
+
 
 ## Table of Contents
 - [Features](#features)
@@ -16,7 +22,7 @@ Thousands of designers, developers, and content creators use HugeIcons Pro for u
 
 ## General Usage
 
-Icons can be downloaded from the [HugeIcons website](https://hugeicons.com) and used in your projects. The icons are available in SVG format and can be easily integrated into your applications.
+Icons can be downloaded from the [HugeIcons website](https://hugeicons.pro) and used in your projects. The icons are available in SVG format and can be easily integrated into your applications.
 
 ## Features
 
