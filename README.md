@@ -1,10 +1,18 @@
-# Hugeicons React
+# HugeIcons React - Free React Icons
 
-Welcome to Hugeicons React, an expertly crafted top-notch icon library designed to make your applications look vibrant and dynamic. 
-
-With more than 3600 stroke icons available for free, our collection offers a wide range of easily customizable and scalable icons, perfect for enhancing user interfaces. 
+Welcome to HugeIcons React, your ultimate source for free React icons. With over 3600 stroke icons available at no cost, our collection is designed to cater to a wide range of design needs, making it perfect for developers and designers looking for high-quality, customizable React icons. Enhance your user interfaces with our scalable and easily adjustable icons, ideal for projects of any size.
 
 Thousands of designers, developers, and content creators use HugeIcons Pro for unlimited personal and commercial projects, making it one of the most versatile and user-friendly icon libraries available.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage Examples](#usage-examples)
+- [Live Example](#live-example)
+- [Contributing](#contributing)
+- [FAQ](#faq)
+- [License](#license)
+
 
 ## General Usage
 
@@ -31,7 +39,7 @@ Or via yarn:
 yarn add hugeicons-react
 ```
 
-## Usage
+## Usage Examples
 
 Import the icons you need from the library and integrate them into your React components. Here's how you can customize the icons to fit your needs:
 
@@ -75,10 +83,34 @@ import { MarketingIcon } from "hugeicons-react";
 
 Check out our example project to see HugeIcons-React in action and explore more customization options.
 
+## Live Example
+
+Explore a live demonstration of HugeIcons React in action at [HugeIcons React Example](https://hugeicons-react.vercel.app/). This example showcases the versatility and ease of customizing our icons to fit your design needs, providing a hands-on experience with the icon collection.
+
+## FAQ
+
+**Q: How can I download and use free React icons from HugeIcons React?**  
+A: You can install the package via npm or yarn and then import the icons into your React project. Detailed installation instructions are provided in the [Installation](#installation) section.
+
+**Q: Are these React icons customizable in terms of size and color?**  
+A: Yes, all icons are fully customizable. You can adjust their size, color, and other properties easily within your React application. See [Usage Examples](#usage-examples) for more information.
+
+**Q: Can I contribute my own designs to the HugeIcons React collection?**  
+A: Absolutely! We welcome contributions. Please refer to our [Contributing](#contributing) section for guidelines on how to submit your icons.
+
+**Q: Is there a live demo where I can see these React icons in action?**  
+A: Yes, we have a live example available at [HugeIcons React Example](#live-example). It showcases various icons and their customization options.
+
+**Q: Are the icons from HugeIcons React free for commercial use?**  
+A: Yes, our icons are free for both personal and commercial use, adhering to the [MIT License](#license). Please review the license details for more information.
+
+
 ## Contributing
 
 Contributions are welcome! If you'd like to add more icons or improve the library, please feel free to submit a pull request or open an issue.
 
 ## License
 
-Hugeicons React is licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+HugeIcons React is licensed under a Creative Commons Attribution 4.0 International License. This permits use, sharing, adaptation, distribution, and reproduction in any medium or format, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+For more details, please refer to the [LICENSE.md](./LICENSE.md) file in the repository.
