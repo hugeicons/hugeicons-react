@@ -111,6 +111,7 @@ Contributions are welcome! If you'd like to add more icons or improve the librar
 
 ## License
 
-HugeIcons React is licensed under a Creative Commons Attribution 4.0 International License. This permits use, sharing, adaptation, distribution, and reproduction in any medium or format, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made.
+HugeIcons React is licensed under the MIT License. This permits use, modification, distribution, and private or commercial use of the icons, provided that the original copyright and permission notice are included in all copies or substantial portions of the software.
 
-For more details, please refer to the [LICENSE.md](./LICENSE.md) file in the repository.
+For more details, see the [LICENSE.md](./LICENSE.md) file in the repository.
+
