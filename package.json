@@ -1,10 +1,15 @@
 {
   "name": "hugeicons-react",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "HugeIcons React Component Library https://hugeicons.com",
   "homepage": "https://hugeicons.com",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "amdName": "hugeicons-react",
+  "main": "dist/cjs/hugeicons-react.js",
+  "main:umd": "dist/umd/hugeicons-react.js",
+  "module": "dist/esm/hugeicons-react.js",
+  "unpkg": "dist/umd/hugeicons-react.js",
+  "typings": "dist/hugeicons-react.d.ts",
+  "sideEffects": false,
   "files": [
     "dist"
   ],
@@ -17,13 +22,34 @@
     "url": "https://github.com/hugeicons/hugeicons-react/issues"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "prepublishOnly": "npm run build"
+    "build": "pnpm clean && pnpm typecheck && pnpm build:bundles",
+    "build:bundles": "node --max-old-space-size=18192 node_modules/.bin/rollup -c ./rollup.config.mjs",
+    "typecheck": "tsc",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "@types/jest": "^27.5.2",
+    "@atomico/rollup-plugin-sizes": "^1.1.4",
+    "@rollup/plugin-replace": "^5.0.5",
     "@types/node": "^16.18.80",
+    "@types/react": "^18.0.12",
+    "cheerio": "^1.0.0-rc.12",
+    "esbuild": "^0.20.1",
+    "html-minifier": "^4.0.0",
+    "lodash": "^4.17.21",
+    "prettier": "^3.2.5",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "rollup": "^4.12.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "rollup-plugin-license": "^3.2.0",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "svgo": "^3.2.0",
+    "svgson": "^5.3.1",
     "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0"
   },
   "keywords": [
     "icons",

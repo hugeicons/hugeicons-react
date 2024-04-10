@@ -1,34 +1,23 @@
 {
   "compilerOptions": {
-    "outDir": "dist",              // Specifies the output directory for all emitted files.
-    "module": "CommonJS",          // Specify module code generation
-    "target": "es5",               // Specify ECMAScript target version
-    "jsx": "react",                // Support JSX in .tsx files
-    "declaration": true,           // Generates corresponding '.d.ts' file.
-    "sourceMap": true,             // Generates corresponding '.map' file.
-    "skipLibCheck": true,          // Skip type checking of all the declaration files (*.d.ts).
-    "strict": true,                // Enable all strict type checking options.
-    "esModuleInterop": true,       // Enables ES6 module emulation
-    "moduleResolution": "node",    // Work like Node.js module resolution
-    "noImplicitReturns": true,     // Report error when not all code paths in function return a value
-    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
-    "baseUrl": ".",                // Base directory to resolve non-relative module names
-    "paths": {                     // Specify paths for baseUrl
-      "hugeicons-react/*": ["icons/*"]
-    },
-    "lib": [                       // Specify library files to be included in the compilation
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
-    "noEmitOnError": true                 // Do not emit outputs if any errors were reported.
+    "strict": true,
+    "declaration": false,
+    "noEmitOnError": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "jsx": "react-jsx",
   },
-  "include": [
-    "icons/**/*" // This includes all files in icons directory for compilation
-  ],
-  "exclude": [
-    "node_modules", // Exclude node_modules from compilation
-    "**/__tests__/*" // Exclude test files from compilation
-  ]
+  "exclude": ["**/node_modules"],
 }
