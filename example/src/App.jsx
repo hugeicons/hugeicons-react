@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  AddCircleHalfDotIcon,
-  FirstBracketCircleIcon,
-  Home01Icon,
-  ListSettingIcon,
-  MarketingIcon
-} from "hugeicons-react";
+import {Home01Icon, MarketingIcon} from "hugeicons-react";
 import './App.css';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {darcula} from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -13,10 +7,24 @@ import {darcula} from 'react-syntax-highlighter/dist/esm/styles/hljs';
 const App = () => {
   return (
     <div className="App">
+
+      <nav>
+        <div className="nav-wrapper">
+          <a href="https://hugeicons.com" className="hugeicons-logo">
+            <img src="https://docs.hugeicons.com/logo_white.svg" alt="Hugeicons Logo" className="logo"/>
+          </a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li><a target={"_blank"} href="https://hugeicons.com/icons">Icons</a></li>
+            <li><a target={"_blank"} href="https://docs.hugeicons.com/">Docs</a></li>
+            <li><a target={"_blank"} href="https://hugeicons.com/pricing">Pricing</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <h1>Hugeicons Example</h1>
       <p className={"subtitle"}>Check all properties to control your icons</p>
 
-      <div className="flex">
+      <div>
         <div className="flex-1">
           <h2>Control icon size</h2>
 
@@ -69,47 +77,6 @@ const App = () => {
           </SyntaxHighlighter>
         </div>
       </div>
-
-
-      <h2>Rotate icons if you want</h2>
-
-      <div className="flex example-container">
-        <ListSettingIcon/>
-        <ListSettingIcon rotate={45}/>
-        <ListSettingIcon rotate={90}/>
-        <ListSettingIcon rotate={135}/>
-        <ListSettingIcon rotate={180}/>
-      </div>
-
-      <h3>Usage</h3>
-      <SyntaxHighlighter language="javascript" style={darcula}>
-        {`
-  // Default rotate is 0
-  <ListSettingIcon/>
-  
-  // You can set the rotate you want (in degrees)
-  <ListSettingIcon rotate={45}/>
-  <ListSettingIcon rotate={90}/>
-  <ListSettingIcon rotate={135}/>
-  <ListSettingIcon rotate={180}/>
-  `}
-      </SyntaxHighlighter>
-
-      <h2>Want them animate? no problem</h2>
-
-      <div className="flex example-container">
-        <FirstBracketCircleIcon animate={true}/>
-        <AddCircleHalfDotIcon animate={true}/>
-      </div>
-
-      <h3>Usage</h3>
-      <SyntaxHighlighter language="javascript" style={darcula}>
-        {`
-  // You can set the animate to true
-  <FirstBracketCircleIcon animate={true}/>
-  <AddCircleHalfDotIcon animate={true}/>
-  `}
-      </SyntaxHighlighter>
     </div>
   );
 };

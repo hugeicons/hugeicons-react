@@ -50,3 +50,41 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Styling the navigation wrapper */
+nav {
+    background-color: #111111; /* Dark blue background */
+    font-family: 'Arial', sans-serif; /* Example font */
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between; /* Aligns the logo and menu items on opposite ends */
+    align-items: center; /* Vertically centers items in the nav */
+    padding: 0.5rem 1rem; /* Adds padding around the nav contents */
+}
+
+/* Brand Logo styles */
+.brand-logo {
+    color: white; /* Logo text color */
+    text-decoration: none; /* Removes underline from anchor tag */
+    font-size: 1.5rem; /* Example font size for logo */
+}
+
+/* Unordered list styles */
+#nav-mobile {
+    list-style: none; /* Removes bullet points from list */
+    display: flex; /* Aligns the nav items in a row */
+}
+
+/* Navigation link styles */
+#nav-mobile li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Removes underline from links */
+    padding: 0.5rem 1rem; /* Adds padding inside each link for spacing */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#nav-mobile li a:hover {
+    background-color: #1e2a3a; /* Darker blue background on hover */
+}
