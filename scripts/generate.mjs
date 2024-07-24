@@ -3,7 +3,7 @@ import path from 'path';
 import { parse } from 'svgson';
 import _ from 'lodash';
 
-const svgDirectory = '../svg';
+const svgDirectory = '/Users/mac/Documents/Projects/Hugeicons/StrokeIconsSVG';
 const outputDirectory = '../src/icons'; // Ensure this directory exists
 
 const ordinalToWord = (name) => {
@@ -12,9 +12,11 @@ const ordinalToWord = (name) => {
     '2nd': 'Second',
     '3rd': 'Third',
     '3-d': 'ThreeD',
+    '3d': 'ThreeD',
     '4-k': 'FourK',
+    '4k': 'FourK',
   };
-  return name.replace(/\b(1st|2nd|3rd|3-d|4-k)\b/g, (match) => ordinalMap[match] || match);
+  return name.replace(/\b(1st|2nd|3rd|3-d|4-k|4k|3d)\b/g, (match) => ordinalMap[match] || match);
 }
 
 function convertFileNameToComponentName(fileName) {
@@ -61,12 +63,17 @@ async function convertSvgToJsObject(filePath) {
 
 function normalizeVariantName(fileName) {
   // the last 2 parts of the file name are the variant name and type ie. stroke-sharp & remove the file extension
-  const parts = fileName.split('-');
+  const parts = ordinalToWord(fileName).split('-');
   return parts.slice(-2).join('.').replace('.svg', '');
 }
 
 async function processDirectory(directory) {
   const icons = {};
+
+  // create output directory if not exists
+  if (!fs.existsSync(outputDirectory)) {
+    fs.mkdirSync(outputDirectory);
+  }
 
   const files = fs.readdirSync(directory);
   for (const file of files) {
@@ -74,6 +81,11 @@ async function processDirectory(directory) {
     // if (file !== '1st-bracket-circle-stroke-rounded.svg') {
     //   continue;
     // }
+
+    // skip svg file if not ended with "stroke-rounded.svg"
+    if (!file.endsWith('stroke-rounded.svg')) {
+      continue;
+    }
 
     // base icon name is after stripping the variant name and type
     const baseIconName = file.split('-').slice(0, -2).join('-');
@@ -107,7 +119,7 @@ async function processDirectory(directory) {
 
     output += `]);\n\nexport default ${componentName};\n`;
 
-    const fileName = `${componentName}.ts`.replace(/([A-Z])/g, '-$1').toLowerCase().substring(1); // Convert to kebab-case
+    const fileName = _.snakeCase(componentName) + '.ts'; // Convert to kebab-case
     fs.writeFileSync(path.join(outputDirectory, fileName), output);
     console.log(`${fileName} has been saved.`);
 

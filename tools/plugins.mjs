@@ -18,7 +18,7 @@ See the LICENSE file in the root directory of this source tree.`,
     }),
     visualizer({
       filename: './stats.html', // or any path you prefer
-      open: true, // this will open the visualizer report in your browser after the build
+      open: false, // this will open the visualizer report in your browser after the build
     }),
     bundleSize(),
   ].filter(Boolean);
