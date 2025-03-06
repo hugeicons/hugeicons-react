@@ -3,11 +3,13 @@
 ![31c9262e-aeea-4403-9086-3c8b88885cab](https://github.com/hugeicons/hugeicons-react/assets/130147052/ff91f2f0-095a-4c6d-8942-3af4759f9021)
 
 
-# Free React Icons - Hugeicons Pro
+# Hugeicons - Free React Icon Library
 
-Welcome to Hugeicons React Icons, your premier destination for free React icons. Our expansive collection features over 4,000+ stroke React icons, available for free and crafted to meet a diverse array of design requirements. These icons are perfect for devs and designers seeking top-quality, customizable options for enhancing their digital product.
+Hugeicons is a free, open-source icon library offering over 4,000 stroke React icons. Designed to simplify your development workflow, these icons are fully customizable and easy to use, making them a perfect fit for both React developers and designers alike.
 
-Hugeicons Pro is trusted and utilized by thousands of designers, devs, and content creators for unlimited personal and commercial projects, establishing it as one of the most versatile and user-friendly React icons libraries in the market.
+What sets Hugeicons apart is the careful attention to detail—each icon is crafted to be incredibly beautiful and consistent, ensuring that your designs look user-friendly and professional.
+
+Trusted by over 150,000 creatives worldwide, Hugeicons makes it easy to add a wide range of beautiful icons to your React projects without any hassle
 
 
 ![a40aa766-1b04-4a2a-a2e6-0ec3c492b96a](https://github.com/hugeicons/hugeicons-react/assets/130147052/f82c0e0e-60ae-4617-802f-812cdc7a58da)
@@ -25,14 +27,15 @@ Hugeicons Pro is trusted and utilized by thousands of designers, devs, and conte
 
 ## General Usage
 
-React icons can be downloaded from the [HugeIcons website](https://hugeicons.pro) and used in your projects. The react icons are available in SVG format and can be easily integrated into your applications.
+React icons can be downloaded from the [Hugeicons website](https://hugeicons.com/icons?style=Stroke&type=Rounded) and used in your projects. The react icons are available in SVG format and can be easily integrated into your applications.
 
 ## Features
 
-- **Extensive Collection**: Access over 4000+ stroke icons for free, ready to use in your projects.
-- **Scalable Icons**: Easily adjust the size of icons to fit your design perfectly.
-- **Color Customization**: Apply any color to icons to match your brand or design theme.
+- **4,000+ Free Stroke Icons**: Perfect for personal and commercial projects, no strings attached.
+- **Easy Customizations**: Change size, color, and even add animations in seconds.
+- **Optimized for React**: Simple and lightweight for your React apps.
 - **Rotation and Animation**: Add a dynamic touch with rotation and animation options.
+- **Scalable and Clean**: Icons stay sharp at any size.
 
 ## Installation
 
@@ -76,11 +79,11 @@ Check out our example project to see HugeIcons-React in action and explore more 
 
 ## Live Example
 
-Explore a live demonstration of HugeIcons React in action at [HugeIcons React Example](https://hugeicons-react.vercel.app/). This example showcases the versatility and ease of customizing our icons to fit your design needs, providing a hands-on experience with the icon collection.
+Explore a live demonstration of Hugeicons React in action at [Hugeicons React Example](https://hugeicons-react.vercel.app/). This example showcases the versatility and ease of customizing our icons to fit your design needs, providing a hands-on experience with the icon collection.
 
 ## FAQ
 
-**Q: How can I download and use free React icons from HugeIcons React Icons?**  
+**Q: How can I download and use free React icons from Hugeicons React Icons?**  
 A: You can install the package via npm or yarn and then import the react icons into your react components. Detailed package installation instructions are provided in the [Installation](#installation) section.
 
 **Q: Are these React icons customizable in terms of size and color?**  
@@ -90,7 +93,7 @@ A: Yes, all react icons are fully customizable. You can adjust their size, color
 A: Absolutely! We welcome contributions. Please refer to our [Contributing](#contributing) section for guidelines on how to submit your icons.
 
 **Q: Is there a live demo where I can see these React icons in action?**  
-A: Yes, we have a live example available at [HugeIcons React Example](#live-example). It showcases the usage import various react icons and their customization options.
+A: Yes, we have a live example available at [Hugeicons React Example](#live-example). It showcases the usage import various react icons and their customization options.
 
 **Q: Are the react icons from Hugeicons React Icons free for commercial use?**  
 A: Yes, our react icons are free for both personal and commercial use, adhering to the [MIT License](#license). Please review the license details for more information.
