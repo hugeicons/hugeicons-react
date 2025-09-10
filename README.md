@@ -1,4 +1,19 @@
+## ⚠️ Deprecation Notice  
 
+This package **`hugeicons-react`** is deprecated and no longer maintained.  
+
+We’ve released a **new React integration** that works seamlessly with all Hugeicons core icon packs. Please use the new packages instead:  
+
+- **React wrapper:** [`@hugeicons/react`](https://www.npmjs.com/package/@hugeicons/react)  
+- **Free core icons:** [`@hugeicons/core-free-icons`](https://www.npmjs.com/package/@hugeicons/core-free-icons)  
+
+### Why the change?
+The new `@hugeicons/react` package introduces:  
+- ✅ Unified support for all Hugeicons core packs  
+- ✅ Improved performance and flexibility  
+- ✅ Ongoing updates and new icon releases  
+
+👉 Future updates will only be released under `@hugeicons/react` and the core icon packs.
 
 ![31c9262e-aeea-4403-9086-3c8b88885cab](https://github.com/hugeicons/hugeicons-react/assets/130147052/ff91f2f0-095a-4c6d-8942-3af4759f9021)
 
