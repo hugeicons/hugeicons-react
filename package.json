@@ -1,7 +1,7 @@
 {
   "name": "hugeicons-react",
   "version": "0.3.0",
-  "description": "HugeIcons React Component Library https://hugeicons.com",
+  "description": "[DEPRECATED] Use @hugeicons/react instead. This package is no longer maintained.",
   "homepage": "https://hugeicons.com",
   "amdName": "hugeicons-react",
   "main": "dist/cjs/hugeicons-react.js",
@@ -52,16 +52,7 @@
     "react": ">=16.0.0"
   },
   "keywords": [
-    "icons",
-    "react-icons",
-    "ui-components",
-    "design-system",
-    "vector-icons",
-    "react-component-library",
-    "web-icons",
-    "scalable-icons",
-    "customizable-icons",
-    "icon-library"
+    "deprecated"
   ],
   "license": "CC0-1.0"
 }
