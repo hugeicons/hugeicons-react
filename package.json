@@ -1,6 +1,7 @@
 {
   "name": "hugeicons-react",
-  "version": "0.3.0",
+  "version": "0.4.0",
+  "type": "module",
   "description": "[DEPRECATED] Use @hugeicons/react instead. This package is no longer maintained.",
   "homepage": "https://hugeicons.com",
   "amdName": "hugeicons-react",
@@ -10,6 +11,19 @@
   "unpkg": "dist/umd/hugeicons-react.js",
   "typings": "dist/hugeicons-react.d.ts",
   "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/esm/hugeicons-react.js",
+      "require": "./dist/cjs/hugeicons-react.js",
+      "types": "./dist/hugeicons-react.d.ts"
+    },
+    "./icons/*": {
+      "import": "./dist/esm/icons/*.js",
+      "require": "./dist/cjs/icons/*.js",
+      "types": "./dist/esm/icons/*.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
     "dist"
   ],
@@ -17,15 +31,20 @@
     "type": "git",
     "url": "git+ssh://git@github.com:hugeicons/hugeicons-react.git"
   },
-  "author": "HugeIcons",
+  "author": "Hugeicons",
   "bugs": {
     "url": "https://github.com/hugeicons/hugeicons-react/issues"
   },
   "scripts": {
+    "generate": "node scripts/generate-icons.mjs",
     "build": "pnpm clean && pnpm typecheck && pnpm build:bundles",
     "build:bundles": "node --max-old-space-size=18192 node_modules/.bin/rollup -c ./rollup.config.mjs",
     "typecheck": "tsc",
     "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@hugeicons/core-free-icons": "^3.1.1",
+    "@hugeicons/react": "^1.1.4"
   },
   "devDependencies": {
     "@atomico/rollup-plugin-sizes": "^1.1.4",

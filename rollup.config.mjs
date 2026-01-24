@@ -1,6 +1,8 @@
 import plugins from './tools/plugins.mjs';
-import pkg from './package.json' assert {type: 'json'};
+import { readFileSync } from 'fs';
 import dts from 'rollup-plugin-dts';
+
+const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'));
 
 const packageName = 'HugeiconsReact';
 const outputFileName = 'hugeicons-react';
@@ -25,7 +27,8 @@ const bundles = [
     inputs: inputs,
     outputDir,
     preserveModules: true,
-    minify: true,
+    preserveModulesRoot: 'src',
+    minify: false,
   },
 ];
 
@@ -45,7 +48,7 @@ const configs = bundles
       inputs.map((input) => ({
         input,
         plugins: plugins(pkg, minify),
-        external: ['react', 'prop-types', ...external],
+        external: ['react', 'prop-types', '@hugeicons/react', '@hugeicons/core-free-icons', ...external],
         output: {
           name: packageName,
           ...(preserveModules
@@ -63,8 +66,10 @@ const configs = bundles
           sourcemap: false,
           preserveModules,
           globals: {
-            react: 'react',
+            react: 'React',
             'prop-types': 'PropTypes',
+            '@hugeicons/react': 'HugeiconsReact',
+            '@hugeicons/core-free-icons': 'HugeiconsCoreFreeIcons',
           },
         },
       })),
